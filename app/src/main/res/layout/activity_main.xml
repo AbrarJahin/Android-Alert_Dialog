@@ -7,7 +7,7 @@
     <Button android:id="@+id/btn_1_option"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Alert"
+        android:text="Show Alert with 1 Button"
         android:padding="10dip"
         android:layout_marginTop="40dip">
     </Button>
@@ -15,14 +15,22 @@
     <Button android:id="@+id/btn_2_option"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Alert With Two Buttons"
+        android:text="Show Alert With 2 Buttons"
         android:padding="10dip">
     </Button>
 
     <Button android:id="@+id/btn_3_option"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Alert with Three Buttons"
+        android:text="Show Alert with 3 Buttons"
         android:padding="10dip">
     </Button>
+
+    <Button android:id="@+id/btn_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Alert with Custom Layout - From XML"
+        android:padding="10dip">
+    </Button>
+
 </LinearLayout>
