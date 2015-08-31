@@ -141,7 +141,28 @@ public class Activity_Main extends Activity implements View.OnClickListener
     {
         final Dialog dialog = new Dialog(context);
         dialog.setContentView(R.layout.dialog_main);
-        dialog.setTitle(R.string.dialog_title);
+
+        Button btCancel = (Button) dialog.findViewById(R.id.dialog_cancel);
+        Button btOk = (Button) dialog.findViewById(R.id.dialog_ok);
+        btCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                //Cancel Click
+                Toast.makeText(getApplicationContext(), "Canceled !!!!!",Toast.LENGTH_LONG).show();
+                dialog.dismiss();
+            }
+        });
+        btOk.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                //OK CLICK
+                Toast.makeText(getApplicationContext(), "\"OK\" Clicked !!!",Toast.LENGTH_LONG).show();
+            }
+        });
+
         dialog.show();
     }
 }
