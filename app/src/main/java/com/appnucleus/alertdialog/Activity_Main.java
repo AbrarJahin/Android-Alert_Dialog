@@ -10,9 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements View.OnClickListener
+public class Activity_Main extends Activity implements View.OnClickListener
 {
-    Context context = MainActivity.this;
+    Context context = Activity_Main.this;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -67,7 +67,7 @@ public class MainActivity extends Activity implements View.OnClickListener
     private void openDialog_1_Button()
     {
         new AlertDialog.Builder(context)
-                .setTitle("2 Button Dialog")
+                .setTitle("1 Button Dialog")
                 .setMessage("Are you sure you want to EXIT this program?")
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener()
                 {
@@ -110,7 +110,7 @@ public class MainActivity extends Activity implements View.OnClickListener
     private void openDialog_3_Button()
     {
         new AlertDialog.Builder(context)
-                .setTitle("2 Button Dialog")
+                .setTitle("3 Button Dialog")
                 .setMessage("Are you sure you want to check this program?")
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener()
                 {
@@ -120,10 +120,8 @@ public class MainActivity extends Activity implements View.OnClickListener
                                 Toast.LENGTH_LONG).show();
                     }
                 })
-                .setNeutralButton(android.R.string.selectAll, new DialogInterface.OnClickListener()
-                {
-                    public void onClick(DialogInterface dialog, int which)
-                    {
+                .setNeutralButton(android.R.string.selectAll, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(getApplicationContext(), "\"Select All\" Clicked",
                                 Toast.LENGTH_LONG).show();
                     }
